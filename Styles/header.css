@@ -1,0 +1,120 @@
+.hyder-header {
+    background-color: rgb(19, 25,33);
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+.hyder-header-left-section {
+    width: 180px;
+}
+
+@media (max-width: 800px) {
+    .hyder-header-left-section {
+        width: unset;
+    }
+}
+
+.header-link {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header-link:hover {
+    border: 1px solid white;
+}
+
+.account-logo {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.hyder-mobile-logo {
+    display: none;
+}
+
+@media (max-width: 5750x) {
+    .account-logo {
+        display: none;
+    }
+
+.hyder-mobile-logo {
+    display: block;
+    height: 35px;
+    margin-top: 5px;
+
+}
+}
+
+.hyder-header-middle-section {
+    flex: 1;
+    max-width: 850px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.search-bar {
+    flex: 1;
+    width: 0;
+    font-size: 16px;
+    height: 38px;
+    padding-left: 15px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-button {
+    background-color: rgb(254, 189, 105);
+    border: none;
+    width: 45px;
+    height: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    flex-shrink: 0;
+}
+
+.search-icon {
+    height: 22px;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+.hyder-header-right-section {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.orders-link {
+    color: white;
+}
+
+.returns-text {
+    display: block;
+    font-size: 13px;
+}
+
+.orders-text {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+}
