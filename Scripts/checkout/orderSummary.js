@@ -34,6 +34,7 @@ export function renderOrderSummart() {
 
         cartSummaryHTML +=                            
         `<div class="cart-item-container 
+        js-cart-item-container
         js-cart-item-container-${matchingProduct.id}">
         <div class="delivery-date">
             Delivery date: ${dateString}
@@ -47,10 +48,11 @@ export function renderOrderSummart() {
                 <div class="product-name">
                 ${matchingProduct.name}
                 </div>
-                <div class="product-price">
+                <div class="product-price ">
                     $${formatCurrency(matchingProduct.priceCents)}
                 </div>
-                <div class="product-quantity">
+                <div class="product-quantity
+                js-product-quantity-${matchingProduct.id}">
                     <span>
                         Quantity: <span class="quantity-label">${cartItem.quantity}</span>
                     </span>
@@ -58,7 +60,9 @@ export function renderOrderSummart() {
                         Update
                     </span>
                     <span class="delete-quantity-link link-primary 
-                    js-delete-link" data-product-id="${matchingProduct.id}">
+                    js-delete-link
+                    js-delete-link-${matchingProduct.id}" 
+                    data-product-id="${matchingProduct.id}">
                         Delete
                     </span>
                 </div>
