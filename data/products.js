@@ -107,10 +107,15 @@ class Clothing extends Product {
         });
   
         console.log('load products');
+      }).catch((error) => {
+        console.log('unexepected error. Please try again later');
       });
+      
 
       return promise;
   }
+
+  
 
   /*
   loadProductsFetch().then(() => {
@@ -134,9 +139,15 @@ class Clothing extends Product {
       fun();
     });
 
+    xhr.addEventListener('error', (error) => {
+      console.log('unexepected error. Please try again later');
+    });
+
    xhr.open('get', 'https://supersimplebackend.dev/products');
    xhr.send();
   }
+
+  
 
  
 
